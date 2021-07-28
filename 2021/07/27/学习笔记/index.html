@@ -100,12 +100,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv8g8bb0j31hc0u0aft.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv83rk9qj61hc0u0dun02.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvh3oidij31hc0u0wta.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv7u6pzyj31c00u046n.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvf6a221j61hc0u0go502.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvams4jfj31hc0u0qc2.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswv83rk9qj61hc0u0dun02.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswv7u6pzyj31c00u046n.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswvams4jfj31hc0u0qc2.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswvf6a221j61hc0u0go502.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswvh3oidij31hc0u0wta.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006RnSWely8gswv8g8bb0j31hc0u0aft.jpg"></li>
         </ul>
       </div>
     </header>
@@ -175,12 +175,13 @@ std::unordered_set&lt;T&gt;　　　　based on hash</p>
 <h5 id="unordered-mapsetfaster-to-access-individual-elements-by-key"><a class="anchor" href="#unordered-mapsetfaster-to-access-individual-elements-by-key">#</a> Unordered map/set:faster to access individual elements by Key</h5>
 <h5 id="a-set-is-just-a-specific-case-of-a-map-that-doesnt-have-a-value"><a class="anchor" href="#a-set-is-just-a-specific-case-of-a-map-that-doesnt-have-a-value">#</a> A set is just a specific case of a map that doesn't have a value!</h5>
 <h4 id="iterators"><a class="anchor" href="#iterators">#</a> Iterators</h4>
-<p>Iterators let us view a non-linear collection in a linear manner.<br />
-set&lt;int&gt;::iterator iter = mySet.begin();<br />
-if (iter == mySet.end ()) return; // 判断结束<br />
-<ins> iter; // 先加后用<br />
- iter</ins>; // 先用后加<br />
- Iterators 抽象出了一种查找元素的办法，无论 container 是什么，让我们在遍历例如 vector，int，list 的时候有一种 standardised 的方式<br />
+<p>Iterators let us view a non-linear collection in a linear manner.</p>
+<pre><code class="language-c++">set&lt;int&gt;::iterator iter = mySet.begin();
+if(iter == mySet.end()) return; //判断结束
+++iter; //先加后用
+iter++; //先用后加
+</code></pre>
+<p>Iterators 抽象出了一种查找元素的办法，无论 container 是什么，让我们在遍历例如 vector，int，list 的时候有一种 standardised 的方式<br />
 形成模板化的东西 template（模板）只要改变（type）类型就是一个新的函数</p>
 <h5 id="templatet"><a class="anchor" href="#templatet">#</a> Template&lt;T&gt;</h5>
 <h2 id="2021726"><a class="anchor" href="#2021726">#</a> 2021.7.26</h2>
@@ -189,59 +190,69 @@ if (iter == mySet.end ()) return; // 判断结束<br />
 <h5 id="ifstream"><a class="anchor" href="#ifstream">#</a> ifstream</h5>
 <p>ifstream is only a type not a variable</p>
 <h5 id="eg"><a class="anchor" href="#eg">#</a> eg:</h5>
-<p>ifstream myStream(&quot;myFile.txt&quot;);</p>
+<pre><code class="language-c++">ifstream myStream(&quot;myFile.txt&quot;);  
+</code></pre>
 <h5 id="another-version"><a class="anchor" href="#another-version">#</a> another version:</h5>
-<p>ifstream myStream;<br />
-myStream.open(&quot;myFile.txt&quot;);</p>
+<pre><code class="language-c++">ifstream myStream;
+myStream.open(&quot;myFile.txt&quot;);  
+</code></pre>
 <h5 id="有时候读取文件的时候文件无法打开会读取到一些没用的东西所以可以加入is_open来判断是否成功打开"><a class="anchor" href="#有时候读取文件的时候文件无法打开会读取到一些没用的东西所以可以加入is_open来判断是否成功打开">#</a> 有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入.is_open () 来判断是否成功打开：</h5>
-<p>ifstream input(&quot;myfile.txt&quot;);</p>
-<p>if(!input.is_open())<br />
-　　cerr&lt;&lt;&quot;Couldn't open the file myfile.txt&quot;&lt;&lt;endl;</p>
+<pre><code class="language-c++">ifstream input(&quot;myfile.txt&quot;);
+
+ if(!input.is_open())
+ 　　cerr&lt;&lt;&quot;Couldn't open the file myfile.txt&lt;&lt;endl;  
+</code></pre>
 <h5 id="cerr-is-designed-for-error-reportingand-is-sometimes-handled-differently-by-the-os"><a class="anchor" href="#cerr-is-designed-for-error-reportingand-is-sometimes-handled-differently-by-the-os">#</a> cerr is designed for error reportingand is sometimes handled differently by the os.</h5>
 <h5 id="ofstream"><a class="anchor" href="#ofstream">#</a> ofstream</h5>
-<p>ofstream myStream(&quot;myFile.txt&quot;); //Write to myFile.txt<br />
- 如果 ofstream 的文件不存在，就会创一个新的，如果已经存在了，就会覆盖掉所有的内容，所以用的时候要小心！！！<br />
+<pre><code class="language-c++">ofstream myStream(&quot;myFile.txt&quot;); //Write to myFile.txt
+</code></pre>
+<p>如果 ofstream 的文件不存在，就会创一个新的，如果已经存在了，就会覆盖掉所有的内容，所以用的时候要小心！！！<br />
 ifstream input(myString.c_str()); //Open the filename stored in myString<br />
  因为 streams 库是 c++ 中比较古老的一个库，open functions on the ifstream and ofstream classes predate the string type，所以想把”string&quot;传给 open 的时候，需要其是一个 C-style string，而不是&quot;string&quot;（maybe 是个 class） 可以用.c_str（）来进行转换。</p>
 <h5 id="eg-2"><a class="anchor" href="#eg-2">#</a> eg:</h5>
-<p>ifstream input(myString.c_str()); //Open the filename stored in myString</p>
+<pre><code class="language-c++">ifstream input(myString.c_str()); //Open the filename stored in myString  
+</code></pre>
 <h5 id="setw20-set-width-for-coutdefault-pad-whitespaces-on-the-left"><a class="anchor" href="#setw20-set-width-for-coutdefault-pad-whitespaces-on-the-left">#</a> setw(20) //set width for cout,default pad whitespaces on the left</h5>
 <h5 id="setfill-用来填补setw多余的部分"><a class="anchor" href="#setfill-用来填补setw多余的部分">#</a> setfill () // 用来填补 setw () 多余的部分</h5>
 <h5 id="streamfail-用来check-if-a-stream-is-in-an-error-state"><a class="anchor" href="#streamfail-用来check-if-a-stream-is-in-an-error-state">#</a> stream.fail () // 用来 check if a stream is in an error state</h5>
 <h5 id="streamclean-用来bring-stream-out-of-its-error-state"><a class="anchor" href="#streamclean-用来bring-stream-out-of-its-error-state">#</a> stream.clean () // 用来 bring stream out of its error state</h5>
 <h5 id="shorthand"><a class="anchor" href="#shorthand">#</a> shorthand</h5>
-<p>while(true){<br />
-int intValue;<br />
-double doubleValue;<br />
-input&gt;&gt; intValue &gt;&gt; doubleValue;<br />
-if(input.fail()) break;<br />
-// ... process values here<br />
-}</p>
+<pre><code class="language-c++">while(true)&#123;
+   int intValue;
+   double doubleValue;
+   input&gt;&gt;intValue&gt;&gt; doubleValue;
+   if(input.fail()) break; 
+   // ... process values here
+   &#125;  
+</code></pre>
 <h5 id="more-cleaner-one"><a class="anchor" href="#more-cleaner-one">#</a> more cleaner one:</h5>
-<p>int intValue;<br />
-double doubleValue;<br />
-while(input &gt;&gt; intValue &gt;&gt; doubleValue) {<br />
-//process values here<br />
-}</p>
+<pre><code class="language-c++">int intValue;
+ double doubleValue;
+ while(input&gt;&gt;intValue&gt;&gt;doubleValue) &#123;
+ //process values here
+ &#125;
+</code></pre>
 <h3 id="an-alternative-getline"><a class="anchor" href="#an-alternative-getline">#</a> An Alternative:  <em>getline</em>()</h3>
 <h5 id="getline-accepts-two-parameters"><a class="anchor" href="#getline-accepts-two-parameters">#</a> getline() accepts two parameters</h5>
 <p>1.a stream to read from<br />
 2.a string to write to.</p>
 <h5 id="code"><a class="anchor" href="#code">#</a> code:</h5>
-<p>string myStr;<br />
-getline(cin, myStr);</p>
+<pre><code class="language-c++">string myStr;
+getline(cin, myStr);
+</code></pre>
 <h4 id="concise-one"><a class="anchor" href="#concise-one">#</a> concise one:</h4>
-<p>int main()<br />
-{<br />
-ifstream capitals(&quot;world-capitals.txt&quot;)<br />
-if (!capitals.is_open()) {<br />
-cerr &lt;&lt; &quot;Cannot find the file world-capitals.txt&quot; &lt;&lt; endl;<br />
-return -1;<br />
-}</p>
-<p>string capital, country;<br />
-while (getline(capitals, capital) &amp;&amp; getline(capitals, country))<br />
-cout &lt;&lt; capital &lt;&lt; &quot; is the capital of &quot; &lt;&lt; country &lt;&lt; endl;<br />
-}</p>
+<pre><code class="language-c++">int main()
+ &#123;
+ ifstream capitals(&quot;world-capitals.txt&quot;)
+ if (!capitals.is_open()) &#123;
+ 	cerr &lt;&lt; &quot;Cannot find the file world-capitals.txt&quot;&lt;&lt; endl;
+ 	return -1;
+ &#125;  
+ string capital, country;
+ while (getline(capitals, capital) &amp;&amp; getline(capitals, country))
+ 	cout &lt;&lt; capital &lt;&lt; &quot; is the capital of &quot; &lt;&lt; country &lt;&lt; endl;
+ &#125;  
+</code></pre>
 <h3 id="a-string-buffer-stringstream"><a class="anchor" href="#a-string-buffer-stringstream">#</a> A String Buffer: stringstream</h3>
 <p>基于 getline () 实现 getInteger ()</p>
 <h2 id="2021727"><a class="anchor" href="#2021727">#</a> 2021.7.27</h2>
@@ -281,14 +292,73 @@ cout&lt;&lt; myMMap.count(3) &lt;&lt; endl; // prints 2
 <pre><code class="language-c++">std::set&lt;int&gt;::iterator iter = mySet.begin();
 </code></pre>
 <h4 id="dereference-iterator-to-read-value-currently-pointed-to"><a class="anchor" href="#dereference-iterator-to-read-value-currently-pointed-to">#</a> Dereference iterator to read value currently pointed to</h4>
-<figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">int</span> val <span class="token operator">=</span> <span class="token operator">*</span>iter<span class="token punctuation">;</span></pre></td></tr></table></figure><h4 id="advance-iterator"><a class="anchor" href="#advance-iterator">#</a> Advance iterator</h4>
-<figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre>iter<span class="token operator">++</span><span class="token punctuation">;</span> or <span class="token operator">++</span>iter<span class="token punctuation">;</span></pre></td></tr></table></figure><p>Compare against another iterator(especially .end() iterator</p>
-<figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">if</span><span class="token punctuation">(</span>iter <span class="token operator">==</span> mySet<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="iterators-let-us-view-a-non_linear-collection-in-a-linear-manner"><a class="anchor" href="#iterators-let-us-view-a-non_linear-collection-in-a-linear-manner">#</a> Iterators let us view a non_linear collection in a linear manner.</h3>
+<pre><code class="language-c++">int val = *iter;
+</code></pre>
+<h4 id="advance-iterator"><a class="anchor" href="#advance-iterator">#</a> Advance iterator</h4>
+<pre><code class="language-c++">iter++; or ++iter;
+</code></pre>
+<p>Compare against another iterator(especially .end() iterator</p>
+<pre><code class="language-c++">if(iter == mySet.end()) return;
+</code></pre>
+<h3 id="iterators-let-us-view-a-non_linear-collection-in-a-linear-manner"><a class="anchor" href="#iterators-let-us-view-a-non_linear-collection-in-a-linear-manner">#</a> Iterators let us view a non_linear collection in a linear manner.</h3>
 <h5 id="one-iterators-example-int-can-be-replaced-by-list-or-vector"><a class="anchor" href="#one-iterators-example-int-can-be-replaced-by-list-or-vector">#</a> one iterators example: (int can be replaced by list or vector)</h5>
-<figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">int</span> <span class="token function">numOccurrences</span> <span class="token punctuation">(</span>set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> cont<span class="token punctuation">,</span> <span class="token keyword">int</span> elemToCount<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>	<span class="token keyword">int</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>	set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator iter<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>	<span class="token keyword">for</span><span class="token punctuation">(</span>iter <span class="token operator">=</span> cont<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> iter <span class="token operator">!=</span> cont<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">++</span>iter<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>		<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">*</span>iter <span class="token operator">==</span> elemToCount<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>			<span class="token operator">++</span>counter<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>	<span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>	<span class="token keyword">return</span> counter<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h4 id="map-iterators"><a class="anchor" href="#map-iterators">#</a> Map Iterators</h4>
+<pre><code class="language-c++">int numOccurrences (set&lt;int&gt;&amp; cont, int elemToCount)&#123;
+	int counter = 0;
+	set&lt;int&gt;::iterator iter;
+	for(iter = cont.begin(); iter != cont.end(); ++iter)&#123;
+		if(*iter == elemToCount)
+			++counter;
+	&#125;
+	return counter;
+&#125;
+</code></pre>
+<h4 id="map-iterators"><a class="anchor" href="#map-iterators">#</a> Map Iterators</h4>
 <p>The iterator of a map&lt;string, int&gt; points to a std :: pair&lt;string, int&gt;</p>
 <p>The std::pair Class</p>
-<figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre>std<span class="token operator">::</span>pair<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> p<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>p<span class="token punctuation">.</span>first <span class="token operator">=</span> <span class="token string">"Phone number"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>p<span class="token punctuation">.</span>second <span class="token operator">=</span> <span class="token number">6507232700</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">//Make a pair</span></pre></td></tr><tr><td data-num="5"></td><td><pre>std<span class="token operator">::</span>pair<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> p <span class="token punctuation">&#123;</span><span class="token string">"Phone number"</span><span class="token punctuation">,</span> <span class="token number">6507232300</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>std<span class="token operator">::</span><span class="token function">make_pair</span><span class="token punctuation">(</span><span class="token string">"Phone number"</span><span class="token punctuation">,</span> <span class="token number">6507232300</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">&#123;</span><span class="token string">"Phone number"</span><span class="token punctuation">,</span> <span class="token number">6507232300</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> <span class="token comment">// 未被保存到变量中</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>Map Iterator</pre></td></tr><tr><td data-num="10"></td><td><pre>map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span> m<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator i <span class="token operator">=</span> m<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator end <span class="token operator">=</span> m<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">!=</span> end<span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    cout <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token operator">*</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>first <span class="token operator">&lt;&lt;</span> <span class="token punctuation">(</span><span class="token operator">*</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span>second <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>   <span class="token comment">// 需要不仅要 * i 还需要 (*i).first (*i).second 因为 map 有两个元素</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><figure class="highlight c"><figcaption data-lang="c"></figcaption><table><tr><td data-num="1"></td><td><pre>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> vec<span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment">// we can use iterators in algorithms like sort to sort a vecotr</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    std<span class="token operator">::</span><span class="token function">sort</span><span class="token punctuation">(</span>vec<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> vec<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment">// we can also use the find algorithm to look for an element</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token comment">// in a collection and return an iterator to it</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator it <span class="token operator">=</span> std<span class="token operator">::</span><span class="token function">find</span><span class="token punctuation">(</span>vec<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> vec<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>it <span class="token operator">!=</span> vec<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>                        <span class="token comment">// 注意，vec.end () 并不是最后一个元素，而是第一个 past 最后一个元素的地方</span></pre></td></tr><tr><td data-num="11"></td><td><pre>       cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Found elem "</span> <span class="token operator">&lt;&lt;</span> <span class="token operator">*</span>it <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>       cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Element not found "</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre></pre></td></tr><tr><td data-num="16"></td><td><pre>set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> mySet<span class="token punctuation">&#123;</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">55</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token comment">// we can iterate through a range of elements in</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token comment">// a sorted collection</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator iter <span class="token operator">=</span> mySet<span class="token punctuation">.</span><span class="token function">lower_bound</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">::</span>iterator end <span class="token operator">=</span> mySet<span class="token punctuation">.</span><span class="token function">upper_bound</span><span class="token punctuation">(</span><span class="token number">28</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre></pre></td></tr><tr><td data-num="23"></td><td><pre>    <span class="token keyword">while</span><span class="token punctuation">(</span>iter <span class="token operator">!=</span> end<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="24"></td><td><pre>        cout <span class="token operator">&lt;&lt;</span> <span class="token operator">*</span>iter <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>        <span class="token operator">++</span>iter<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr></table></figure>
+<pre><code class="language-c++">std::pair&lt;string, int&gt; p;
+p.first = &quot;Phone number&quot;;
+p.second = 6507232700;
+//Make a pair
+std::pair&lt;string, int&gt; p &#123;&quot;Phone number&quot;, 6507232300&#125;;
+std::make_pair(&quot;Phone number&quot;, 6507232300);
+&#123;&quot;Phone number&quot;, 6507232300&#125;; //未被保存到变量中
+
+Map Iterator
+map&lt;int, int&gt; m;
+map&lt;int, int&gt;::iterator i = m.begin();
+map&lt;int, int&gt;::iterator end = m.end();
+while(i != end)&#123;
+    cout &lt;&lt; (*i).first &lt;&lt; (*i),second &lt;&lt; endl;   //需要不仅要*i 还需要(*i).first (*i).second 因为map有两个元素
+&#125;
+</code></pre>
+<pre><code class="language-c++">vector&lt;int&gt; vec&#123;3,1,4,1,5,9,2,6,5,3&#125;;
+
+    // we can use iterators in algorithms like sort to sort a vecotr
+    std::sort(vec.begin(), vec.end());
+
+
+    // we can also use the find algorithm to look for an element
+    // in a collection and return an iterator to it
+    vector&lt;int&gt;::iterator it = std::find(vec.begin(), vec.end(), 5);
+    if(it != vec.end()) &#123;                        //注意，vec.end()并不是最后一个元素，而是第一个past最后一个元素的地方
+       cout &lt;&lt; &quot;Found elem &quot; &lt;&lt; *it &lt;&lt; endl;
+    &#125; else &#123;
+       cout &lt;&lt; &quot;Element not found &quot; &lt;&lt; endl;
+    &#125;
+
+set&lt;int&gt; mySet&#123;4,1,3,5,55,5, 9, 22, 19, 28&#125;;
+
+    // we can iterate through a range of elements in
+    // a sorted collection
+    set&lt;int&gt;::iterator iter = mySet.lower_bound(7);
+    set&lt;int&gt;::iterator end = mySet.upper_bound(28);
+
+    while(iter != end) &#123;
+        cout &lt;&lt; *iter &lt;&lt; endl;
+        ++iter;
+    &#125;
+</code></pre>
+
   </div>
 
    <footer>
@@ -299,7 +369,7 @@ cout&lt;&lt; myMMap.count(3) &lt;&lt; endl; // prints 2
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2021-07-27 23:16:42" itemprop="dateModified" datetime="2021-07-27T23:16:42+08:00">2021-07-27</time>
+    <time title="Modified: 2021-07-28 19:39:36" itemprop="dateModified" datetime="2021-07-28T19:39:36+08:00">2021-07-28</time>
   </span>
 </div>
 
