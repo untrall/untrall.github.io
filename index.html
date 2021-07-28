@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Lear&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Lear&#39;s Blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Lear&#39;s Blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Lear">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Lear's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Lear&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2021-07-27T15:15:41.000Z" itemprop="datePublished">2021-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="2021-7-24-CS106L-学完找c-工作"><a href="#2021-7-24-CS106L-学完找c-工作" class="headerlink" title="2021.7.24    CS106L:学完找c++工作"></a>2021.7.24    CS106L:学完找c++工作</h2><p>好网站：<a target="_blank" rel="noopener" href="https://learncs.me/">https://learncs.me/</a></p>
+<p>CS106L 每天看2个lecture (上午） 每天下午做两道leetcode。加油</p>
+<h3 id="Lecture2："><a href="#Lecture2：" class="headerlink" title="Lecture2："></a>Lecture2：</h3><p>cin读取的时候会把输入的内容放进一个buffer，遇到whitespace或者\n才结束。如果buffer是空的，它会等待用户输入，如果非空，它就会从上次的位置读取到whitespace或者\n</p>
+<h2 id="2021-7-25"><a href="#2021-7-25" class="headerlink" title="2021.7.25"></a>2021.7.25</h2><h3 id="Lecture-3-Sequence-Containers："><a href="#Lecture-3-Sequence-Containers：" class="headerlink" title="Lecture 3 Sequence Containers："></a>Lecture 3 Sequence Containers：</h3><p>std::vector&lt;T&gt; 默认使用<br>std::deque&lt;T&gt; 当插入和删除在头部或尾部比较多的时候，选择deque, can push_front</p>
+<h3 id="Lecture-4-Associative-Containers-amp-Iterators："><a href="#Lecture-4-Associative-Containers-amp-Iterators：" class="headerlink" title="Lecture 4 Associative Containers &amp; Iterators："></a>Lecture 4 Associative Containers &amp; Iterators：</h3><h4 id="Stack"><a href="#Stack" class="headerlink" title="Stack:"></a>Stack:</h4><p>  limit functionality of a vector/deque to only allow push_back and pop_back</p>
+<h4 id="Queue"><a href="#Queue" class="headerlink" title="Queue:"></a>Queue:</h4><p>  limit functionality of a vector/deque to only allow push_back and pop_front</p>
+<h4 id="Stack-amp-Queue"><a href="#Stack-amp-Queue" class="headerlink" title="Stack &amp; Queue"></a>Stack &amp; Queue</h4><p>Stack and Queueonly allow accesss to top element</p>
+<h4 id="Associative-Containers"><a href="#Associative-Containers" class="headerlink" title="Associative Containers"></a>Associative Containers</h4><p> use key to get access instead of indexes<br> std::map&lt;T1,T2&gt;<br> std::set&lt;T&gt;<br> std::unordered_map&lt;T1,T2&gt;　　based on hash<br> std::unordered_set&lt;T&gt;　　　　based on hash  </p>
+<h5 id="Map-set-keys-in-sorted-order-faster-to-iterate-through-a-range-of-elements"><a href="#Map-set-keys-in-sorted-order-faster-to-iterate-through-a-range-of-elements" class="headerlink" title="Map/set:keys in sorted order,faster to iterate through a range of elements"></a>Map/set:keys in sorted order,faster to iterate through a range of elements</h5><h5 id="Unordered-map-set-faster-to-access-individual-elements-by-Key"><a href="#Unordered-map-set-faster-to-access-individual-elements-by-Key" class="headerlink" title="Unordered map/set:faster to access individual elements by Key"></a>Unordered map/set:faster to access individual elements by Key</h5><h5 id="A-set-is-just-a-specific-case-of-a-map-that-doesn’t-have-a-value"><a href="#A-set-is-just-a-specific-case-of-a-map-that-doesn’t-have-a-value" class="headerlink" title="A set is just a specific case of a map that doesn’t have a value!"></a>A set is just a specific case of a map that doesn’t have a value!</h5><h4 id="Iterators"><a href="#Iterators" class="headerlink" title="Iterators"></a>Iterators</h4><p>Iterators let us view a non-linear collection in a linear manner.<br>set&lt;int&gt;::iterator iter = mySet.begin();<br>if(iter == mySet.end()) return; //判断结束<br>++iter; //先加后用<br>iter++; //先用后加<br>Iterators抽象出了一种查找元素的办法，无论container是什么，让我们在遍历例如vector，int，list的时候有一种standardised的方式<br>形成模板化的东西 template（模板）只要改变（type）类型就是一个新的函数  </p>
+<h5 id="Template-lt-T-gt"><a href="#Template-lt-T-gt" class="headerlink" title="Template&lt;T&gt;"></a>Template&lt;T&gt;</h5><h2 id="2021-7-26"><a href="#2021-7-26" class="headerlink" title="2021.7.26"></a>2021.7.26</h2><h2 id="Course-Reader"><a href="#Course-Reader" class="headerlink" title="Course Reader"></a>Course Reader</h2><h3 id="Chapter-3-Streams"><a href="#Chapter-3-Streams" class="headerlink" title="Chapter 3 Streams"></a>Chapter 3 Streams</h3><h5 id="ifstream"><a href="#ifstream" class="headerlink" title="ifstream"></a>ifstream</h5><p>ifstream is only a type not a variable  </p>
+<h5 id="eg"><a href="#eg" class="headerlink" title="eg:"></a>eg:</h5><p>ifstream myStream(“myFile.txt”);  </p>
+<h5 id="another-version"><a href="#another-version" class="headerlink" title="another version:"></a>another version:</h5><p>ifstream myStream;<br>myStream.open(“myFile.txt”);  </p>
+<h5 id="有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入-is-open-来判断是否成功打开："><a href="#有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入-is-open-来判断是否成功打开：" class="headerlink" title="有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入.is_open()来判断是否成功打开："></a>有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入.is_open()来判断是否成功打开：</h5><p>ifstream input(“myfile.txt”);</p>
+<p> if(!input.is_open())<br> 　　cerr&lt;&lt;”Couldn’t open the file myfile.txt”&lt;&lt;endl;  </p>
+<h5 id="cerr-is-designed-for-error-reportingand-is-sometimes-handled-differently-by-the-os"><a href="#cerr-is-designed-for-error-reportingand-is-sometimes-handled-differently-by-the-os" class="headerlink" title="cerr is designed for error reportingand is sometimes handled differently by the os."></a>cerr is designed for error reportingand is sometimes handled differently by the os.</h5><h5 id="ofstream"><a href="#ofstream" class="headerlink" title="ofstream"></a>ofstream</h5><p>ofstream myStream(“myFile.txt”); //Write to myFile.txt<br>如果ofstream的文件不存在，就会创一个新的，如果已经存在了，就会覆盖掉所有的内容，所以用的时候要小心！！！<br>ifstream input(myString.c_str()); //Open the filename stored in myString<br>因为streams 库是c++中比较古老的一个库，open functions on the ifstream and ofstream classes predate the string type，所以想把”string”传给 open的时候，需要其是一个C-style string，而不是”string”（maybe 是个class） 可以用.c_str（）来进行转换。</p>
+<h5 id="eg-1"><a href="#eg-1" class="headerlink" title="eg:"></a>eg:</h5><p>ifstream input(myString.c_str()); //Open the filename stored in myString  </p>
+<h5 id="setw-20-set-width-for-cout-default-pad-whitespaces-on-the-left"><a href="#setw-20-set-width-for-cout-default-pad-whitespaces-on-the-left" class="headerlink" title="setw(20) //set width for cout,default pad whitespaces on the left"></a>setw(20) //set width for cout,default pad whitespaces on the left</h5><h5 id="setfill-用来填补setw-多余的部分"><a href="#setfill-用来填补setw-多余的部分" class="headerlink" title="setfill() //用来填补setw()多余的部分"></a>setfill() //用来填补setw()多余的部分</h5><h5 id="stream-fail-用来check-if-a-stream-is-in-an-error-state"><a href="#stream-fail-用来check-if-a-stream-is-in-an-error-state" class="headerlink" title="stream.fail() //用来check if a stream is in an error state"></a>stream.fail() //用来check if a stream is in an error state</h5><h5 id="stream-clean-用来bring-stream-out-of-its-error-state"><a href="#stream-clean-用来bring-stream-out-of-its-error-state" class="headerlink" title="stream.clean() //用来bring stream out of its error state"></a>stream.clean() //用来bring stream out of its error state</h5><h5 id="shorthand"><a href="#shorthand" class="headerlink" title="shorthand"></a>shorthand</h5><p>while(true){<br>   int intValue;<br>   double doubleValue;<br>   input&gt;&gt; intValue &gt;&gt; doubleValue;<br>   if(input.fail()) break;<br>   // … process values here<br>   }  </p>
+<h5 id="more-cleaner-one"><a href="#more-cleaner-one" class="headerlink" title="more cleaner one:"></a>more cleaner one:</h5><p>int intValue;<br> double doubleValue;<br> while(input &gt;&gt; intValue &gt;&gt; doubleValue) {<br> //process values here<br> }</p>
+<h3 id="An-Alternative-getline"><a href="#An-Alternative-getline" class="headerlink" title="An Alternative:  getline()"></a>An Alternative:  <em>getline</em>()</h3><h5 id="getline-accepts-two-parameters"><a href="#getline-accepts-two-parameters" class="headerlink" title="getline() accepts two parameters"></a>getline() accepts two parameters</h5><p>1.a stream to read from<br>2.a string to write to.</p>
+<h5 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h5><p>string myStr;<br>getline(cin, myStr);</p>
+<h4 id="concise-one"><a href="#concise-one" class="headerlink" title="concise one:"></a>concise one:</h4><p>int main()<br> {<br> ifstream capitals(“world-capitals.txt”)<br> if (!capitals.is_open()) {<br> cerr &lt;&lt; “Cannot find the file world-capitals.txt” &lt;&lt; endl;<br> return -1;<br> }  </p>
+<p> string capital, country;<br> while (getline(capitals, capital) &amp;&amp; getline(capitals, country))<br> cout &lt;&lt; capital &lt;&lt; “ is the capital of “ &lt;&lt; country &lt;&lt; endl;<br> }  </p>
+<h3 id="A-String-Buffer-stringstream"><a href="#A-String-Buffer-stringstream" class="headerlink" title="A String Buffer: stringstream"></a>A String Buffer: stringstream</h3><p>基于getline()实现getInteger()</p>
+<h2 id="2021-7-27"><a href="#2021-7-27" class="headerlink" title="2021.7.27"></a>2021.7.27</h2><h5 id="读取txt的小demo"><a href="#读取txt的小demo" class="headerlink" title="读取txt的小demo"></a>读取txt的小demo</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello and welcome to cs106l assignment1!&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Please enter a filename1&quot;</span>&lt;&lt;endl;</span><br><span class="line">    string filename1;</span><br><span class="line">    cin&gt;&gt;filename1;</span><br><span class="line">    <span class="function">ifstream <span class="title">input</span><span class="params">(filename1.c_str())</span></span>;</span><br><span class="line">    <span class="keyword">if</span>(input.<span class="built_in">is_open</span>())&#123;</span><br><span class="line">        <span class="keyword">int</span> num_node;</span><br><span class="line">        input&gt;&gt;num_node;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;success get the file&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;there are &quot;</span>&lt;&lt;num_node&lt;&lt;<span class="string">&quot;in the file&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        cerr&lt;&lt;<span class="string">&quot;cannot find the file&quot;</span>&lt;&lt;filename1&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Lecture-5-：Advanced-Containers"><a href="#Lecture-5-：Advanced-Containers" class="headerlink" title="Lecture 5 ：Advanced Containers"></a>Lecture 5 ：Advanced Containers</h3><h5 id="Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair"><a href="#Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair" class="headerlink" title="Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling insert on a key value std::pair"></a>Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling <strong>insert</strong> on a key value <strong>std::pair</strong></h5><h5 id="e-g"><a href="#e-g" class="headerlink" title="e.g.:"></a>e.g.:</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">multimap&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; myMMap;</span><br><span class="line">myMMap.<span class="built_in">insert</span>(<span class="built_in">make_pair</span>(<span class="number">3</span>,<span class="number">3</span>));</span><br><span class="line">myMMap.<span class="built_in">insert</span>(&#123;<span class="number">3</span>,<span class="number">3</span>&#125;); <span class="comment">// shorter syntax</span></span><br><span class="line">cout&lt;&lt; myMMap.<span class="built_in">count</span>(<span class="number">3</span>) &lt;&lt; endl; <span class="comment">// prints 2</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Iterators-provide-a-guaranteed-interface"><a href="#Iterators-provide-a-guaranteed-interface" class="headerlink" title="Iterators provide a guaranteed interface!"></a>Iterators provide a guaranteed interface!</h4><p>Four essential iterator operations:</p>
+<h4 id="Create-iterator"><a href="#Create-iterator" class="headerlink" title="Create iterator"></a>Create iterator</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::set&lt;<span class="keyword">int</span>&gt;::iterator iter = mySet.<span class="built_in">begin</span>();</span><br></pre></td></tr></table></figure>
+
+<h4 id="Dereference-iterator-to-read-value-currently-pointed-to"><a href="#Dereference-iterator-to-read-value-currently-pointed-to" class="headerlink" title="Dereference iterator to read value currently pointed to"></a>Dereference iterator to read value currently pointed to</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> val = *iter;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Advance-iterator"><a href="#Advance-iterator" class="headerlink" title="Advance iterator"></a>Advance iterator</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iter++; <span class="keyword">or</span> ++iter;</span><br></pre></td></tr></table></figure>
+
+<p>Compare against another iterator(especially .end() iterator</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(iter == mySet.end()) <span class="keyword">return</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner"><a href="#Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner" class="headerlink" title="Iterators let us view a non_linear collection in a linear manner."></a>Iterators let us view a non_linear collection in a linear manner.</h3><h5 id="one-iterators-example-int-can-be-replaced-by-list-or-vector"><a href="#one-iterators-example-int-can-be-replaced-by-list-or-vector" class="headerlink" title="one iterators example: (int can be replaced by list or vector)"></a>one iterators example: (int can be replaced by list or vector)</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numOccurrences</span> <span class="params">(<span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;&amp; cont, <span class="keyword">int</span> elemToCount)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> counter = <span class="number">0</span>;</span><br><span class="line">	<span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator iter;</span><br><span class="line">	<span class="keyword">for</span>(iter = cont.begin(); iter != cont.end(); ++iter)&#123;</span><br><span class="line">		<span class="keyword">if</span>(*iter == elemToCount)</span><br><span class="line">			++counter;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> counter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Map-Iterators"><a href="#Map-Iterators" class="headerlink" title="Map Iterators"></a>Map Iterators</h4><p>The iterator of a map&lt;string, int&gt; points to a std :: pair&lt;string, int&gt;</p>
+<p>The std::pair Class</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::<span class="built_in">pair</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; p;</span><br><span class="line">p.first = <span class="string">&quot;Phone number&quot;</span>;</span><br><span class="line">p.second = <span class="number">6507232700</span>;</span><br><span class="line"><span class="comment">//Make a pair</span></span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">pair</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; p &#123;<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>&#125;;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">make_pair</span>(<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>);</span><br><span class="line">&#123;<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>&#125;; <span class="comment">//未被保存到变量中</span></span><br><span class="line"></span><br><span class="line">Map Iterator</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;::iterator i = m.begin();</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;::iterator end = m.end();</span><br><span class="line"><span class="keyword">while</span>(i != end)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; (*i).first &lt;&lt; (*i),second &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//需要不仅要*i 还需要(*i).first (*i).second 因为map有两个元素</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec&#123;<span class="number">3</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can use iterators in algorithms like sort to sort a vecotr</span></span><br><span class="line">    <span class="built_in">std</span>::sort(vec.begin(), vec.end());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can also use the find algorithm to look for an element</span></span><br><span class="line">    <span class="comment">// in a collection and return an iterator to it</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator it = <span class="built_in">std</span>::find(vec.begin(), vec.end(), <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">if</span>(it != vec.end()) &#123;                        <span class="comment">//注意，vec.end()并不是最后一个元素，而是第一个past最后一个元素的地方</span></span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Found elem &quot;</span> &lt;&lt; *it &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Element not found &quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt; mySet&#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">55</span>,<span class="number">5</span>, <span class="number">9</span>, <span class="number">22</span>, <span class="number">19</span>, <span class="number">28</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can iterate through a range of elements in</span></span><br><span class="line">    <span class="comment">// a sorted collection</span></span><br><span class="line">    <span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator iter = mySet.lower_bound(<span class="number">7</span>);</span><br><span class="line">    <span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator end = mySet.upper_bound(<span class="number">28</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(iter != end) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; *iter &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        ++iter;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ckrnab5ns0000c8bw5tn22wq8" data-title="学习笔记" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Lear<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
