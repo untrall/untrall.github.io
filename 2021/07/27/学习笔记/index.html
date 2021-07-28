@@ -1,101 +1,155 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>学习笔记 | Lear&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="2021.7.24    CS106L:学完找c++工作好网站：https:&#x2F;&#x2F;learncs.me&#x2F; CS106L 每天看2个lecture (上午） 每天下午做两道leetcode。加油 Lecture2：cin读取的时候会把输入的内容放进一个buffer，遇到whitespace或者\n才结束。如果buffer是空的，它会等待用户输入，如果非空，它就会从上次的位置读取到whitespace或">
-<meta property="og:type" content="article">
-<meta property="og:title" content="学习笔记">
-<meta property="og:url" content="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="Lear&#39;s Blog">
-<meta property="og:description" content="2021.7.24    CS106L:学完找c++工作好网站：https:&#x2F;&#x2F;learncs.me&#x2F; CS106L 每天看2个lecture (上午） 每天下午做两道leetcode。加油 Lecture2：cin读取的时候会把输入的内容放进一个buffer，遇到whitespace或者\n才结束。如果buffer是空的，它会等待用户输入，如果非空，它就会从上次的位置读取到whitespace或">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-07-27T15:15:41.000Z">
-<meta property="article:modified_time" content="2021-07-27T15:16:42.967Z">
-<meta property="article:author" content="Lear">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Lear's Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Lear's Blog" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Lear's Blog" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Lear's Blog" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="canonical" href="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
-  
+
+
+  <title>
+学习笔记 |
+晖哥小站 = Lear's Blog</title>
 <meta name="generator" content="Hexo 5.4.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Lear&#39;s Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
       </div>
     </div>
   </div>
-</header>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">学习笔记
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-07-27 23:15:41">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-07-27T23:15:41+08:00">2021-07-27</time>
+  </span>
+</div>
 
-      <div class="outer">
-        <section id="main"><article id="post-学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2021-07-27T15:15:41.000Z" itemprop="datePublished">2021-07-27</time>
-</a>
-    
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">晖哥小站</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      学习笔记
-    </h1>
-  
+</nav>
 
-      </header>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvf6a221j61hc0u0go502.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvams4jfj31hc0u0qc2.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv7u6pzyj31c00u046n.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv8g8bb0j31hc0u0aft.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswvh3oidij31hc0u0wta.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006RnSWely8gswv83rk9qj61hc0u0dun02.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="2021-7-24-CS106L-学完找c-工作"><a href="#2021-7-24-CS106L-学完找c-工作" class="headerlink" title="2021.7.24    CS106L:学完找c++工作"></a>2021.7.24    CS106L:学完找c++工作</h2><p>好网站：<a target="_blank" rel="noopener" href="https://learncs.me/">https://learncs.me/</a></p>
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Lear">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lear's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="2021-7-24-CS106L-学完找c-工作"><a href="#2021-7-24-CS106L-学完找c-工作" class="headerlink" title="2021.7.24    CS106L:学完找c++工作"></a>2021.7.24    CS106L:学完找c++工作</h2><p>好网站：<span class="exturl" data-url="aHR0cHM6Ly9sZWFybmNzLm1lLw==">https://learncs.me/</span></p>
 <p>CS106L 每天看2个lecture (上午） 每天下午做两道leetcode。加油</p>
 <h3 id="Lecture2："><a href="#Lecture2：" class="headerlink" title="Lecture2："></a>Lecture2：</h3><p>cin读取的时候会把输入的内容放进一个buffer，遇到whitespace或者\n才结束。如果buffer是空的，它会等待用户输入，如果非空，它就会从上次的位置读取到whitespace或者\n</p>
 <h2 id="2021-7-25"><a href="#2021-7-25" class="headerlink" title="2021.7.25"></a>2021.7.25</h2><h3 id="Lecture-3-Sequence-Containers："><a href="#Lecture-3-Sequence-Containers：" class="headerlink" title="Lecture 3 Sequence Containers："></a>Lecture 3 Sequence Containers：</h3><p>std::vector&lt;T&gt; 默认使用<br>std::deque&lt;T&gt; 当插入和删除在头部或尾部比较多的时候，选择deque, can push_front</p>
@@ -118,122 +172,313 @@
 <h4 id="concise-one"><a href="#concise-one" class="headerlink" title="concise one:"></a>concise one:</h4><p>int main()<br> {<br> ifstream capitals(“world-capitals.txt”)<br> if (!capitals.is_open()) {<br> cerr &lt;&lt; “Cannot find the file world-capitals.txt” &lt;&lt; endl;<br> return -1;<br> }  </p>
 <p> string capital, country;<br> while (getline(capitals, capital) &amp;&amp; getline(capitals, country))<br> cout &lt;&lt; capital &lt;&lt; “ is the capital of “ &lt;&lt; country &lt;&lt; endl;<br> }  </p>
 <h3 id="A-String-Buffer-stringstream"><a href="#A-String-Buffer-stringstream" class="headerlink" title="A String Buffer: stringstream"></a>A String Buffer: stringstream</h3><p>基于getline()实现getInteger()</p>
-<h2 id="2021-7-27"><a href="#2021-7-27" class="headerlink" title="2021.7.27"></a>2021.7.27</h2><h5 id="读取txt的小demo"><a href="#读取txt的小demo" class="headerlink" title="读取txt的小demo"></a>读取txt的小demo</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;fstream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello and welcome to cs106l assignment1!&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Please enter a filename1&quot;</span>&lt;&lt;endl;</span><br><span class="line">    string filename1;</span><br><span class="line">    cin&gt;&gt;filename1;</span><br><span class="line">    <span class="function">ifstream <span class="title">input</span><span class="params">(filename1.c_str())</span></span>;</span><br><span class="line">    <span class="keyword">if</span>(input.<span class="built_in">is_open</span>())&#123;</span><br><span class="line">        <span class="keyword">int</span> num_node;</span><br><span class="line">        input&gt;&gt;num_node;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;success get the file&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;there are &quot;</span>&lt;&lt;num_node&lt;&lt;<span class="string">&quot;in the file&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        cerr&lt;&lt;<span class="string">&quot;cannot find the file&quot;</span>&lt;&lt;filename1&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Lecture-5-：Advanced-Containers"><a href="#Lecture-5-：Advanced-Containers" class="headerlink" title="Lecture 5 ：Advanced Containers"></a>Lecture 5 ：Advanced Containers</h3><h5 id="Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair"><a href="#Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair" class="headerlink" title="Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling insert on a key value std::pair"></a>Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling <strong>insert</strong> on a key value <strong>std::pair</strong></h5><h5 id="e-g"><a href="#e-g" class="headerlink" title="e.g.:"></a>e.g.:</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">multimap&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; myMMap;</span><br><span class="line">myMMap.<span class="built_in">insert</span>(<span class="built_in">make_pair</span>(<span class="number">3</span>,<span class="number">3</span>));</span><br><span class="line">myMMap.<span class="built_in">insert</span>(&#123;<span class="number">3</span>,<span class="number">3</span>&#125;); <span class="comment">// shorter syntax</span></span><br><span class="line">cout&lt;&lt; myMMap.<span class="built_in">count</span>(<span class="number">3</span>) &lt;&lt; endl; <span class="comment">// prints 2</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="2021-7-27"><a href="#2021-7-27" class="headerlink" title="2021.7.27"></a>2021.7.27</h2><h5 id="读取txt的小demo"><a href="#读取txt的小demo" class="headerlink" title="读取txt的小demo"></a>读取txt的小demo</h5><pre><code class="c++">#include&lt;iostream&gt;
+#include&lt;fstream&gt;
+using namespace std;
+int main()&#123;
+    cout&lt;&lt;&quot;Hello and welcome to cs106l assignment1!&quot;&lt;&lt;endl;
+    cout&lt;&lt;&quot;Please enter a filename1&quot;&lt;&lt;endl;
+    string filename1;
+    cin&gt;&gt;filename1;
+    ifstream input(filename1.c_str());
+    if(input.is_open())&#123;
+        int num_node;
+        input&gt;&gt;num_node;
+        cout&lt;&lt;&quot;success get the file&quot;&lt;&lt;endl;
+        cout&lt;&lt;&quot;there are &quot;&lt;&lt;num_node&lt;&lt;&quot;in the file&quot;&lt;&lt;endl;
+    &#125;
+    else&#123;
+        cerr&lt;&lt;&quot;cannot find the file&quot;&lt;&lt;filename1&lt;&lt;endl;
+    &#125;
+    return 0;
+&#125;
+</code></pre>
+<h3 id="Lecture-5-：Advanced-Containers"><a href="#Lecture-5-：Advanced-Containers" class="headerlink" title="Lecture 5 ：Advanced Containers"></a>Lecture 5 ：Advanced Containers</h3><h5 id="Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair"><a href="#Multimap-一个key可以有两个不同的值，没有-操作符，-add-elements-by-calling-insert-on-a-key-value-std-pair" class="headerlink" title="Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling insert on a key value std::pair"></a>Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling <strong>insert</strong> on a key value <strong>std::pair</strong></h5><h5 id="e-g"><a href="#e-g" class="headerlink" title="e.g.:"></a>e.g.:</h5><pre><code class="c++">multimap&lt;int,int&gt; myMMap;
+myMMap.insert(make_pair(3,3));
+myMMap.insert(&#123;3,3&#125;); // shorter syntax
+cout&lt;&lt; myMMap.count(3) &lt;&lt; endl; // prints 2
+</code></pre>
 <h4 id="Iterators-provide-a-guaranteed-interface"><a href="#Iterators-provide-a-guaranteed-interface" class="headerlink" title="Iterators provide a guaranteed interface!"></a>Iterators provide a guaranteed interface!</h4><p>Four essential iterator operations:</p>
-<h4 id="Create-iterator"><a href="#Create-iterator" class="headerlink" title="Create iterator"></a>Create iterator</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">std::set&lt;<span class="keyword">int</span>&gt;::iterator iter = mySet.<span class="built_in">begin</span>();</span><br></pre></td></tr></table></figure>
-
-<h4 id="Dereference-iterator-to-read-value-currently-pointed-to"><a href="#Dereference-iterator-to-read-value-currently-pointed-to" class="headerlink" title="Dereference iterator to read value currently pointed to"></a>Dereference iterator to read value currently pointed to</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> val = *iter;</span><br></pre></td></tr></table></figure>
-
-<h4 id="Advance-iterator"><a href="#Advance-iterator" class="headerlink" title="Advance iterator"></a>Advance iterator</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iter++; <span class="keyword">or</span> ++iter;</span><br></pre></td></tr></table></figure>
-
+<h4 id="Create-iterator"><a href="#Create-iterator" class="headerlink" title="Create iterator"></a>Create iterator</h4><pre><code class="c++">std::set&lt;int&gt;::iterator iter = mySet.begin();
+</code></pre>
+<h4 id="Dereference-iterator-to-read-value-currently-pointed-to"><a href="#Dereference-iterator-to-read-value-currently-pointed-to" class="headerlink" title="Dereference iterator to read value currently pointed to"></a>Dereference iterator to read value currently pointed to</h4><pre><code class="c">int val = *iter;
+</code></pre>
+<h4 id="Advance-iterator"><a href="#Advance-iterator" class="headerlink" title="Advance iterator"></a>Advance iterator</h4><pre><code class="c">iter++; or ++iter;
+</code></pre>
 <p>Compare against another iterator(especially .end() iterator</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(iter == mySet.end()) <span class="keyword">return</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner"><a href="#Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner" class="headerlink" title="Iterators let us view a non_linear collection in a linear manner."></a>Iterators let us view a non_linear collection in a linear manner.</h3><h5 id="one-iterators-example-int-can-be-replaced-by-list-or-vector"><a href="#one-iterators-example-int-can-be-replaced-by-list-or-vector" class="headerlink" title="one iterators example: (int can be replaced by list or vector)"></a>one iterators example: (int can be replaced by list or vector)</h5><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numOccurrences</span> <span class="params">(<span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;&amp; cont, <span class="keyword">int</span> elemToCount)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> counter = <span class="number">0</span>;</span><br><span class="line">	<span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator iter;</span><br><span class="line">	<span class="keyword">for</span>(iter = cont.begin(); iter != cont.end(); ++iter)&#123;</span><br><span class="line">		<span class="keyword">if</span>(*iter == elemToCount)</span><br><span class="line">			++counter;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> counter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="c">if(iter == mySet.end()) return;
+</code></pre>
+<h3 id="Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner"><a href="#Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner" class="headerlink" title="Iterators let us view a non_linear collection in a linear manner."></a>Iterators let us view a non_linear collection in a linear manner.</h3><h5 id="one-iterators-example-int-can-be-replaced-by-list-or-vector"><a href="#one-iterators-example-int-can-be-replaced-by-list-or-vector" class="headerlink" title="one iterators example: (int can be replaced by list or vector)"></a>one iterators example: (int can be replaced by list or vector)</h5><pre><code class="c">int numOccurrences (set&lt;int&gt;&amp; cont, int elemToCount)&#123;
+    int counter = 0;
+    set&lt;int&gt;::iterator iter;
+    for(iter = cont.begin(); iter != cont.end(); ++iter)&#123;
+        if(*iter == elemToCount)
+            ++counter;
+    &#125;
+    return counter;
+&#125;
+</code></pre>
 <h4 id="Map-Iterators"><a href="#Map-Iterators" class="headerlink" title="Map Iterators"></a>Map Iterators</h4><p>The iterator of a map&lt;string, int&gt; points to a std :: pair&lt;string, int&gt;</p>
 <p>The std::pair Class</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">std</span>::<span class="built_in">pair</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; p;</span><br><span class="line">p.first = <span class="string">&quot;Phone number&quot;</span>;</span><br><span class="line">p.second = <span class="number">6507232700</span>;</span><br><span class="line"><span class="comment">//Make a pair</span></span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">pair</span>&lt;<span class="built_in">string</span>, <span class="keyword">int</span>&gt; p &#123;<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>&#125;;</span><br><span class="line"><span class="built_in">std</span>::<span class="built_in">make_pair</span>(<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>);</span><br><span class="line">&#123;<span class="string">&quot;Phone number&quot;</span>, <span class="number">6507232300</span>&#125;; <span class="comment">//未被保存到变量中</span></span><br><span class="line"></span><br><span class="line">Map Iterator</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; m;</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;::iterator i = m.begin();</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;::iterator end = m.end();</span><br><span class="line"><span class="keyword">while</span>(i != end)&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; (*i).first &lt;&lt; (*i),second &lt;&lt; <span class="built_in">endl</span>;   <span class="comment">//需要不仅要*i 还需要(*i).first (*i).second 因为map有两个元素</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="c">std::pair&lt;string, int&gt; p;
+p.first = &quot;Phone number&quot;;
+p.second = 6507232700;
+//Make a pair
+std::pair&lt;string, int&gt; p &#123;&quot;Phone number&quot;, 6507232300&#125;;
+std::make_pair(&quot;Phone number&quot;, 6507232300);
+&#123;&quot;Phone number&quot;, 6507232300&#125;; //未被保存到变量中
 
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vec&#123;<span class="number">3</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">3</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can use iterators in algorithms like sort to sort a vecotr</span></span><br><span class="line">    <span class="built_in">std</span>::sort(vec.begin(), vec.end());</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can also use the find algorithm to look for an element</span></span><br><span class="line">    <span class="comment">// in a collection and return an iterator to it</span></span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;::iterator it = <span class="built_in">std</span>::find(vec.begin(), vec.end(), <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">if</span>(it != vec.end()) &#123;                        <span class="comment">//注意，vec.end()并不是最后一个元素，而是第一个past最后一个元素的地方</span></span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Found elem &quot;</span> &lt;&lt; *it &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">       <span class="built_in">cout</span> &lt;&lt; <span class="string">&quot;Element not found &quot;</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt; mySet&#123;<span class="number">4</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">55</span>,<span class="number">5</span>, <span class="number">9</span>, <span class="number">22</span>, <span class="number">19</span>, <span class="number">28</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// we can iterate through a range of elements in</span></span><br><span class="line">    <span class="comment">// a sorted collection</span></span><br><span class="line">    <span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator iter = mySet.lower_bound(<span class="number">7</span>);</span><br><span class="line">    <span class="built_in">set</span>&lt;<span class="keyword">int</span>&gt;::iterator end = mySet.upper_bound(<span class="number">28</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(iter != end) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; *iter &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        ++iter;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+Map Iterator
+map&lt;int, int&gt; m;
+map&lt;int, int&gt;::iterator i = m.begin();
+map&lt;int, int&gt;::iterator end = m.end();
+while(i != end)&#123;
+    cout &lt;&lt; (*i).first &lt;&lt; (*i),second &lt;&lt; endl;   //需要不仅要*i 还需要(*i).first (*i).second 因为map有两个元素
+&#125;
+</code></pre>
+<pre><code class="c">vector&lt;int&gt; vec&#123;3,1,4,1,5,9,2,6,5,3&#125;;
+
+    // we can use iterators in algorithms like sort to sort a vecotr
+    std::sort(vec.begin(), vec.end());
 
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ckrnab5ns0000c8bw5tn22wq8" data-title="学习笔记" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
+    // we can also use the find algorithm to look for an element
+    // in a collection and return an iterator to it
+    vector&lt;int&gt;::iterator it = std::find(vec.begin(), vec.end(), 5);
+    if(it != vec.end()) &#123;                        //注意，vec.end()并不是最后一个元素，而是第一个past最后一个元素的地方
+       cout &lt;&lt; &quot;Found elem &quot; &lt;&lt; *it &lt;&lt; endl;
+    &#125; else &#123;
+       cout &lt;&lt; &quot;Element not found &quot; &lt;&lt; endl;
+    &#125;
+
+set&lt;int&gt; mySet&#123;4,1,3,5,55,5, 9, 22, 19, 28&#125;;
+
+    // we can iterate through a range of elements in
+    // a sorted collection
+    set&lt;int&gt;::iterator iter = mySet.lower_bound(7);
+    set&lt;int&gt;::iterator end = mySet.upper_bound(28);
+
+    while(iter != end) &#123;
+        cout &lt;&lt; *iter &lt;&lt; endl;
+        ++iter;
+    &#125;
+</code></pre>
+
   </div>
-  
-    
-  
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-07-27 23:16:42" itemprop="dateModified" datetime="2021-07-27T23:16:42+08:00">2021-07-27</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Lear WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Lear Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Lear PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>Lear <i class="ic i-at"><em>@</em></i>Lear's Blog
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="学习笔记">http://example.com/2021/07/27/学习笔记/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
 </article>
 
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li></ul>
-    </div>
   </div>
-
-
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-          </li>
-        
-      </ul>
+
+<div class="post-nav">
+    <div class="item left">
     </div>
-  </div>
+    <div class="item right">
+    </div>
+</div>
 
   
-</aside>
-        
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2021-7-24-CS106L-%E5%AD%A6%E5%AE%8C%E6%89%BEc-%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">2021.7.24    CS106L:学完找c++工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lecture2%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">Lecture2：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2021-7-25"><span class="toc-number">2.</span> <span class="toc-text">2021.7.25</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Lecture-3-Sequence-Containers%EF%BC%9A"><span class="toc-number">2.1.</span> <span class="toc-text">Lecture 3 Sequence Containers：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lecture-4-Associative-Containers-amp-Iterators%EF%BC%9A"><span class="toc-number">2.2.</span> <span class="toc-text">Lecture 4 Associative Containers &amp; Iterators：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Stack"><span class="toc-number">2.2.1.</span> <span class="toc-text">Stack:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Queue"><span class="toc-number">2.2.2.</span> <span class="toc-text">Queue:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Stack-amp-Queue"><span class="toc-number">2.2.3.</span> <span class="toc-text">Stack &amp; Queue</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Associative-Containers"><span class="toc-number">2.2.4.</span> <span class="toc-text">Associative Containers</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Map-set-keys-in-sorted-order-faster-to-iterate-through-a-range-of-elements"><span class="toc-number">2.2.4.1.</span> <span class="toc-text">Map&#x2F;set:keys in sorted order,faster to iterate through a range of elements</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Unordered-map-set-faster-to-access-individual-elements-by-Key"><span class="toc-number">2.2.4.2.</span> <span class="toc-text">Unordered map&#x2F;set:faster to access individual elements by Key</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#A-set-is-just-a-specific-case-of-a-map-that-doesn%E2%80%99t-have-a-value"><span class="toc-number">2.2.4.3.</span> <span class="toc-text">A set is just a specific case of a map that doesn’t have a value!</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Iterators"><span class="toc-number">2.2.5.</span> <span class="toc-text">Iterators</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Template-lt-T-gt"><span class="toc-number">2.2.5.1.</span> <span class="toc-text">Template&lt;T&gt;</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2021-7-26"><span class="toc-number">3.</span> <span class="toc-text">2021.7.26</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Course-Reader"><span class="toc-number">4.</span> <span class="toc-text">Course Reader</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Chapter-3-Streams"><span class="toc-number">4.1.</span> <span class="toc-text">Chapter 3 Streams</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#ifstream"><span class="toc-number">4.1.0.1.</span> <span class="toc-text">ifstream</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#eg"><span class="toc-number">4.1.0.2.</span> <span class="toc-text">eg:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#another-version"><span class="toc-number">4.1.0.3.</span> <span class="toc-text">another version:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89%E6%97%B6%E5%80%99%EF%BC%8C%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E7%9A%84%E6%97%B6%E5%80%99%E6%96%87%E4%BB%B6%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%EF%BC%8C%E4%BC%9A%E8%AF%BB%E5%8F%96%E5%88%B0%E4%B8%80%E4%BA%9B%E6%B2%A1%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF%EF%BC%8C%E6%89%80%E4%BB%A5%E5%8F%AF%E4%BB%A5%E5%8A%A0%E5%85%A5-is-open-%E6%9D%A5%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F%E6%89%93%E5%BC%80%EF%BC%9A"><span class="toc-number">4.1.0.4.</span> <span class="toc-text">有时候，读取文件的时候文件无法打开，会读取到一些没用的东西，所以可以加入.is_open()来判断是否成功打开：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#cerr-is-designed-for-error-reportingand-is-sometimes-handled-differently-by-the-os"><span class="toc-number">4.1.0.5.</span> <span class="toc-text">cerr is designed for error reportingand is sometimes handled differently by the os.</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ofstream"><span class="toc-number">4.1.0.6.</span> <span class="toc-text">ofstream</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#eg-1"><span class="toc-number">4.1.0.7.</span> <span class="toc-text">eg:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#setw-20-set-width-for-cout-default-pad-whitespaces-on-the-left"><span class="toc-number">4.1.0.8.</span> <span class="toc-text">setw(20) &#x2F;&#x2F;set width for cout,default pad whitespaces on the left</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#setfill-%E7%94%A8%E6%9D%A5%E5%A1%AB%E8%A1%A5setw-%E5%A4%9A%E4%BD%99%E7%9A%84%E9%83%A8%E5%88%86"><span class="toc-number">4.1.0.9.</span> <span class="toc-text">setfill() &#x2F;&#x2F;用来填补setw()多余的部分</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#stream-fail-%E7%94%A8%E6%9D%A5check-if-a-stream-is-in-an-error-state"><span class="toc-number">4.1.0.10.</span> <span class="toc-text">stream.fail() &#x2F;&#x2F;用来check if a stream is in an error state</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#stream-clean-%E7%94%A8%E6%9D%A5bring-stream-out-of-its-error-state"><span class="toc-number">4.1.0.11.</span> <span class="toc-text">stream.clean() &#x2F;&#x2F;用来bring stream out of its error state</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#shorthand"><span class="toc-number">4.1.0.12.</span> <span class="toc-text">shorthand</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#more-cleaner-one"><span class="toc-number">4.1.0.13.</span> <span class="toc-text">more cleaner one:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#An-Alternative-getline"><span class="toc-number">4.2.</span> <span class="toc-text">An Alternative:  getline()</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#getline-accepts-two-parameters"><span class="toc-number">4.2.0.1.</span> <span class="toc-text">getline() accepts two parameters</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#code"><span class="toc-number">4.2.0.2.</span> <span class="toc-text">code:</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#concise-one"><span class="toc-number">4.2.1.</span> <span class="toc-text">concise one:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#A-String-Buffer-stringstream"><span class="toc-number">4.3.</span> <span class="toc-text">A String Buffer: stringstream</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2021-7-27"><span class="toc-number">5.</span> <span class="toc-text">2021.7.27</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96txt%E7%9A%84%E5%B0%8Fdemo"><span class="toc-number">5.0.0.1.</span> <span class="toc-text">读取txt的小demo</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lecture-5-%EF%BC%9AAdvanced-Containers"><span class="toc-number">5.1.</span> <span class="toc-text">Lecture 5 ：Advanced Containers</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Multimap-%E4%B8%80%E4%B8%AAkey%E5%8F%AF%E4%BB%A5%E6%9C%89%E4%B8%A4%E4%B8%AA%E4%B8%8D%E5%90%8C%E7%9A%84%E5%80%BC%EF%BC%8C%E6%B2%A1%E6%9C%89-%E6%93%8D%E4%BD%9C%E7%AC%A6%EF%BC%8C-add-elements-by-calling-insert-on-a-key-value-std-pair"><span class="toc-number">5.1.0.1.</span> <span class="toc-text">Multimap: 一个key可以有两个不同的值，没有[ ]操作符， add elements by calling insert on a key value std::pair</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#e-g"><span class="toc-number">5.1.0.2.</span> <span class="toc-text">e.g.:</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Iterators-provide-a-guaranteed-interface"><span class="toc-number">5.1.1.</span> <span class="toc-text">Iterators provide a guaranteed interface!</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-iterator"><span class="toc-number">5.1.2.</span> <span class="toc-text">Create iterator</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Dereference-iterator-to-read-value-currently-pointed-to"><span class="toc-number">5.1.3.</span> <span class="toc-text">Dereference iterator to read value currently pointed to</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Advance-iterator"><span class="toc-number">5.1.4.</span> <span class="toc-text">Advance iterator</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Iterators-let-us-view-a-non-linear-collection-in-a-linear-manner"><span class="toc-number">5.2.</span> <span class="toc-text">Iterators let us view a non_linear collection in a linear manner.</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#one-iterators-example-int-can-be-replaced-by-list-or-vector"><span class="toc-number">5.2.0.1.</span> <span class="toc-text">one iterators example: (int can be replaced by list or vector)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Map-Iterators"><span class="toc-number">5.2.1.</span> <span class="toc-text">Map Iterators</span></a></li></ol></li></ol></li></ol>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 Lear<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Lear"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Lear</p>
+  <div class="description" itemprop="description"></div>
+</div>
 
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">1</span>
+        <span class="name">posts</span>
+      </a>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
 </nav>
-    
 
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
 
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
+<ul class="menu">
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
 
 
+</ul>
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+      </div>
+    </div>
   </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/07/27/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="学习笔记">学习笔记</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Lear @ 晖哥小站</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/07/27/学习笔记/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
 </body>
 </html>
